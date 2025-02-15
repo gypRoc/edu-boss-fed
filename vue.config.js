@@ -18,18 +18,15 @@ module.exports = {
         // target: 'https://edufront.lagounews.com',
         target: 'http://edufront.lagounews.com',
         // ws: true,
-        changeOrigin: true, // 把请求头中的host 配置为target
-        pathRewrite: {
-          '^/front': '' // 根据实际情况重写路径（若不需要重写可留空）
-        }
+        changeOrigin: true // 把请求头中的host 配置为target
       },
       '/boss': {
         // target: 'https://eduboss.lagounews.com',
         target: 'http://eduboss.lagounews.com',
-        changeOrigin: true, // 把请求头中的host 配置为target
-        pathRewrite: {
-          '^/boss': '' // 根据实际情况重写路径（若不需要重写可留空）
-        }
+        changeOrigin: true // 把请求头中的host 配置为target
+        // pathRewrite: {
+        //   '^/boss': '' // 根据实际情况重写路径（若不需要重写可留空）
+        // }
       }
     }
   }

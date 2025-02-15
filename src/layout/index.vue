@@ -5,8 +5,10 @@
         <app-aside></app-aside>
       </el-aside>
       <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main
+        <el-header>
+          <app-header></app-header>
+        </el-header>
+        <el-main>
           <!-- 路由出口 -->
           <router-view></router-view>
         </el-main>
@@ -18,10 +20,12 @@
 <script lang="ts">
 import Vue from 'vue'
 import AppAside from './components/app-aside.vue'
+import AppHeader from './components/app-header.vue'
 export default Vue.extend({
   name: 'LayoutIndex',
   components: {
-    AppAside
+    AppAside,
+    AppHeader
   }
 })
 </script>
@@ -39,10 +43,7 @@ export default Vue.extend({
 }
 
 .el-header {
-  background: #f8f9fb;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: #fff;
 }
 
 .el-main {
